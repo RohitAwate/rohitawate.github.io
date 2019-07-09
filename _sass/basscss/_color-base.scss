@@ -14,10 +14,13 @@ a:hover {
   text-decoration: underline;
 }
 
-pre,
-code {
+pre {
   background-color: $lighter-gray;
   border-radius: $border-radius;
+}
+
+.highlight {
+  padding: 10px;
 }
 
 hr {
