@@ -159,7 +159,7 @@ Let's take a look at our tail recursive Fibonacci function, `fib_tail`. Once the
 
 This presents an opportunity to simply replace the values of the local `n`, `a` and `b` variables with the ones used in the recursive call. Instead of a `call` instruction like before, the compiler can simply redirect the flow of execution to the first instruction in the function, effectively emulating a recursive call. But, without the overhead of one! Basically, the compiler goes:
 
-![gif](http://bit.ly/2XQZZob)
+![gif](https://bit.ly/2XQZZob)
 
 This is how the call stack would look like:
 
@@ -189,7 +189,7 @@ For our tail recursive call, I see the following snippets of assembly:
 
 As I said, I don't really understand assembly, but we're just checking if we've eliminated the `call fib` recursive calls. I'm not really sure how GCC is redirecting the control flow. What matters, however, is that there are no `call fib` instructions in the code. That means there are no recursive calls. The tail call has been eliminated. Feel free to dive into the assembly and verify for yourself.
 
-<img src="http://bit.ly/2XVE9zQ" width="50%" alt="chandler dancing gif">
+<img src="https://bit.ly/2XVE9zQ" width="50%" alt="chandler dancing gif">
 
 # Support
 - We've been using **C** in this post since GCC and Clang both support tail call optimization (TCO).
