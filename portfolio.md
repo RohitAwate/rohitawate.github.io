@@ -9,9 +9,9 @@ tags: portfolio projects education
 <a class="github-button" href="https://github.com/RohitAwate/Everest" data-size="large" data-show-count="true" aria-label="Star RohitAwate/Everest on GitHub">Star</a>
 
 A beautiful, cross-platform REST client written in JavaFX that aims to be a lighter alternative to the popular Electron-based alternatives.
-Everest allows you to compose and requests, stores your history, comes with support for Basic Auth, Digest Auth and OAuth 2.0 _(work in progress)_. It also comes with lightweight mock API servers. Everest made it to #2 on GitHub Java Trending for a week.
+Everest allows you to compose and requests, stores your history, comes with support for Basic Auth, Digest Auth and OAuth 2.0 _(work in progress)_. It also comes with lightweight mock API servers.
 
-![everest](/images/portfolio/everest.png/)
+![everest](/images/portfolio/everest.png)
 
 **Articles, Reviews and Mentions**:
 - [Article about a UI optimization](/2018/09/19/everest-state-switching)
@@ -21,6 +21,8 @@ Everest allows you to compose and requests, stores your history, comes with supp
 
 Everest will come with a synchronization server, Summit, which will sync your projects, requests, history and mock servers across your devices.
 Summit will be written in Go.
+
+Everest made it to [#2 on GitHub Java Trending](/images/portfolio/everest_rank2.jpg) for a week, consequently pushing me to [#13](/images/portfolio/rohit_rank13.jpg) on the list of trending Java developers the same week. It is also being by the University of California at San Diego for an online course they offer as an example for learning how to navigate a codebase, find things, add new features, etc. Check out a video by the course instructor, June Clarke, [here](https://www.youtube.com/watch?v=3BzOA3sCD8Q).
 
 ---
 
