@@ -27,5 +27,11 @@ I also enjoy and have the highest level of appreciation for good television. Bre
 _Along with code, this is one topic that I can talk endlessly about!_
 
 
+Funnily enough, I was also on TV once. I was among the top 5 finalists on MTV's "Get a Job: Season 5" in 2019. I was selected from over 15,000 applications across India and interviewed with Microsoft for an internship position. I didn't get it, but the experience was beyond my wildest dreams!
+
+![msft_mtv](/images/msft_mtv.jpg)
+
+You can watch my episode on Viacom's streaming service, [Voot](https://www.voot.com/shows/linkedin-mtv-get-a-job-s05/5/794752/interns-in-it-to-win-it-/802875).
+
 ## Business
 No, I'm not an MBA but I am quite fascinated by the business side of technology. I love to watch how technology is affected by acquisitions, rivalries, startups, investments, legal wars, IPOs and the like. I was a Windows Phone user and have seen how a phenomenal piece of technology loses in the real world thanks to some poor business decisions.
