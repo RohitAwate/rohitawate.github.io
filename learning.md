@@ -79,17 +79,27 @@ _**Disclaimer**: Some of the links to books on Amazon are affiliate links. If yo
 - [C++ Language Reference by Microsoft](https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference?view=vs-2019)
 
 ---
-# Data Science
-- [IBM Data Science Professional Certificate](https://www.coursera.org/specializations/ibm-data-science-professional-certificate)
-- [HarvardX's Data Science Professional Certificate](https://www.edx.org/professional-certificate/harvardx-data-science)
-
----
 
 # Compilers
 - [Georgia Tech's Compilers: Theory and Practice](https://www.udacity.com/course/compilers-theory-and-practice--ud168)
 - [Stanford's Compilers](https://lagunita.stanford.edu/courses/Engineering/Compilers/Fall2014/about)
 - [Bisqwit's Create a Compiler Series](https://www.youtube.com/playlist?list=PLzLzYGEbdY5n9ITKUqOuRjXkRU5tMW2Sd)
 - [Write an Compiler in Go by Thorsten Ball](https://compilerbook.com/)
+
+---
+
+# Data Science
+- [IBM Data Science Professional Certificate](https://www.coursera.org/specializations/ibm-data-science-professional-certificate)
+- [HarvardX's Data Science Professional Certificate](https://www.edx.org/professional-certificate/harvardx-data-science)
+
+---
+
+# Docker
+- [A Beginner-Friendly Introduction to Containers, VMs and Docker by Preethi Kasireddy on freeCodeCamp](https://www.freecodecamp.org/news/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b/)
+- [Learn Docker in 12 Minutes by Jake Wright](https://www.youtube.com/watch?v=YFl2mCHdv24)
+- [Exploring Docker by Traversy Media](https://www.youtube.com/watch?v=Kyx2PsuwomE)
+- [Docker Official Documentation](https://docs.docker.com/)
+- [Building a container from scratch by Liz Rice](https://www.youtube.com/watch?v=Utf-A4rODH8)
 
 ---
 
@@ -159,8 +169,16 @@ _**Disclaimer**: Some of the links to books on Amazon are affiliate links. If yo
 
 ---
 
+# Git and GitHub
+- [Git Tutorial by Corey Schafer](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx)
+- [Git and GitHub Crash Course by Traversy Media](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [Interactive Git Tutorial](https://www.katacoda.com/courses/git)
+- [Interactive Tutorial on Git Branching](https://learngitbranching.js.org/)
+
+---
+
 # Interpreters & Bytecode Virtual Machines
-- [Crafting Interpreters by Robert Nystrom](http://www.craftinginterpreters.com/)
+- [Crafting Interpreters by Robert Nystrom](http://www.craftinginterpreters.com/) _(cannot recommend this gem enough)_
 - [Write an Interpreter in Go by Thorsten Ball](https://interpreterbook.com/)
 - [So You Want to Build a Language VM by Fletcher Haynes](https://blog.subnetzero.io/post/building-language-vm-part-00/)
 - [Simple Interpreter by Ruslan Spivak](https://ruslanspivak.com/lsbasi-part1/)
@@ -214,6 +232,12 @@ _**Disclaimer**: Some of the links to books on Amazon are affiliate links. If yo
 - [University of Washington's Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
 - [MITx's Machine Learning with Python: From Linear Models to Deep Learning](https://courses.edx.org/courses/course-v1:MITx+6.86x+1T2019/course/)
 - [StatQuest's Machine Learning Series](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF)
+
+---
+
+# MongoDB
+- [MongoDB Tutorial by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u)
+- [MongoDB Crash Course by Traversy Media](https://www.youtube.com/watch?v=-56x56UppqQ)
 
 ---
 
