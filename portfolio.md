@@ -14,7 +14,7 @@ Everest allows you to compose and requests, stores your history, comes with supp
 ![everest](/images/portfolio/everest.png)
 
 **Articles, Reviews and Mentions**:
-- [Article about a UI optimization](/2018/09/19/everest-state-switching)
+- [Article about UI optimization](/2018/09/19/everest-state-switching)
 - [By Java's official Twitter handle](https://twitter.com/java/status/1070730841079336960)
 - [Review by Nordic APIs](https://nordicapis.com/review-of-everest-api-testing-tool/)
 - [Article by JAXenter](https://jaxenter.com/everest-rest-api-testing-client-javafx-152796.html)
