@@ -4,6 +4,7 @@ title: Home
 cover: '/images/retrievers.jpg'
 about: '/about'
 portfolio: '/portfolio'
+contact: '/contact'
 ---
 
 <header class="main-header {% if page.cover %}"
@@ -19,10 +20,11 @@ portfolio: '/portfolio'
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
-                {% if site.description %} {{ site.description }}. {% endif %}
+                {% if site.description %} {{ site.description }} {% endif %}
                 <br>
                 {% if page.about %} <a style="color:white; margin-right: 10px" href='{{page.about | relative_url}}'> About </a> {% endif %}
-                {% if page.portfolio %} <a style="color:white" href='{{page.portfolio | relative_url}}'> Portfolio </a> {% endif %}
+                {% if page.portfolio %} <a style="color:white; margin-right: 10px" href='{{page.portfolio | relative_url}}'> Portfolio </a> {% endif %}
+                {% if page.contact %} <a style="color:white" href='{{page.contact | relative_url}}'> Say Hello! </a> {% endif %}
             </h2>
         </div>
     </div>
