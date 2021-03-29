@@ -206,7 +206,7 @@ h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5em;
     letter-spacing: -2px;
     text-indent: -3px;
 }
@@ -915,13 +915,13 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .post-footer h4 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 .post-footer p {
     margin: 1rem 0;
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 1.75em;
 }
 
@@ -945,6 +945,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Create some space to the right for the share links */
 .post-footer .author {
+    margin-top: 100px;
     margin-right: 180px;
 }
 
@@ -1122,8 +1123,8 @@ margin on the iframe, cause it breaks stuff. */
     top: -40px;
     left: 50%;
     margin-left: -40px;
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     overflow: hidden;
     padding: 6px;
@@ -1654,6 +1655,7 @@ margin on the iframe, cause it breaks stuff. */
     }
 
     .post-footer .author {
+        margin-top: 100px;
         margin: 0 0 2rem 0;
         padding: 0 0 1.6rem 0;
         border-bottom: #EBF2F6 1px dashed;
