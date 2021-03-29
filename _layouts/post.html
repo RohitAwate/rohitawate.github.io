@@ -1,67 +1,73 @@
 ---
 layout: default
+disqus: false
+archive: false
+post_class: post-template
 ---
 
-{% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
-{% if minutes == 0 %}
-{% assign minutes = 1 %}
-{% endif %}
+<header class="main-header post-head {% if page.cover %}"
+    style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{'/' | relative_url }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{'feed.xml' | relative_url }}">Subscribe</a>
+    </nav>
+</header>
 
-<div class="post-header mb2">
-  <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
-  {% if page.update_date %}
-    <span class="post-meta">{{ site.text.post.updated | default: "Updated" }}: {{ page.update_date | date: site.date_format }}</span><br>
-  {% endif %}
-  <span class="post-meta small">
-  {% if page.minutes %}
-    {{ page.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-  {% else %}
-    {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-  {% endif %}
-  </span>
-</div>
+<main class="content" role="main">
 
-<article class="post-content">
-  {{ content }}
-</article>
+    <article class="post">
 
-{% if site.show_sharing_icons %}
-  {% include share_buttons.html %}
-{% endif %}
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <section class="post-meta" style="margin-bottom:1em;">
+                
+                {% if page.categories.size > 0 %}
+                {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
+                {% endif %}
+                <time class="post-date"
+                    datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+            </section>
+        </header>
 
-{% if site.show_post_footers %}
-  {% include post_footer.html %}
-{% endif %}
+        <section class="post-content">
+            {{content}}
+        </section>
 
-{% if site.disqus_shortname %}
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname  = '{{ site.disqus_shortname }}';
-    var disqus_identifier = '{{ page.id }}';
-    var disqus_title      = {{ page.title | jsonify }};
+        {% if page.archive %}
+        <section class="archive">
+            <h5>Archive</h5>
+            <ul>
+                {% for post in site.posts %}
+                <li><span>{{ post.date | date_to_string }}</span> <a
+                        href="{{ post.url  | relative_url}}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
 
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            {% if site.author %}
+            <figure class="author-image">
+                <a class="img" href="{{ '/' | relative_url }}"
+                    style="background-image: url({{'/assets/images/profile.jpg' | relative_url}})">
+                    <span class="hidden">{{site.author}}'s Picture</span></a>
+            </figure>
+            <section class="author">
+                <!-- Author Name -->
+                <h4> {{ site.author }} </h4>
+                <!-- Author Bio -->
+                <p>
+                    I write about computer science, technology, films, television and business
+                </p>
+            </section>
+            {% endif %}
 
-{% if site.facebook_comments %}
-  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="{{ site.facebook_comments_number }}"></div>
-{% endif %}
+            <!-- Share links section -->
+            {% include share.html %}
 
-{% if site.show_related_posts %}
-  <h3 class="related-post-title">{{ site.text.post.related_posts | default: "Related Posts" }}</h3>
-  {% for post in site.related_posts %}
-    <div class="post ml2">
-      <a href="{{ post.url | relative_url }}" class="post-link">
-        <h4 class="post-title">{{ post.title }}</h4>
-        <p class="post-summary">{{ post.summary }}</p>
-      </a>
-    </div>
-  {% endfor %}
-{% endif %}
+        </footer>
+
+    </article>
+
+</main>

@@ -2,7 +2,7 @@
 layout: post
 title: Demystifying Tail Call Optimization
 date: 2019-07-11 21:13:00 +530
-categories: tail-recursion, tail-call-optimization, tail-call-elimination, c, gcc, optimization, compiler
+categories: Compilers Optimizations
 summary: Exploring what tail call optimization is, how it works and why you should use it.
 ---
 
