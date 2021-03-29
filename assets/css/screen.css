@@ -488,6 +488,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .main-header .inner {
     width: 80%;
+    margin-top: 500px;
 }
 
 .main-nav {
