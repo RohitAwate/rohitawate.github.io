@@ -21,7 +21,7 @@ portfolio: '/portfolio'
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
                 <br>
-                {% if page.about %} <a style="color:white" href='{{page.about | relative_url}}'> About me </a> {% endif %}
+                {% if page.about %} <a style="color:white; margin-right: 10px" href='{{page.about | relative_url}}'> About </a> {% endif %}
                 {% if page.portfolio %} <a style="color:white" href='{{page.portfolio | relative_url}}'> Portfolio </a> {% endif %}
             </h2>
         </div>
