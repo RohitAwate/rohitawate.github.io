@@ -2,7 +2,7 @@
 layout: post
 title: Hello, world!
 date: 2019-06-16 18:13:00 +530
-categories: introduction
+categories: Introduction
 summary: An introduction to this blog.
 ---
 

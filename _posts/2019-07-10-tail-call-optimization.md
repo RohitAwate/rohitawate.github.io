@@ -4,9 +4,8 @@ title: Demystifying Tail Call Optimization
 date: 2019-07-11 21:13:00 +530
 categories: Compilers Optimizations
 summary: Exploring what tail call optimization is, how it works and why you should use it.
+cover: /images/posts/2019-07-10-tail-call-optimization/dog_tail.jpg
 ---
-
-![main](/images/posts/2019-07-10-tail-call-optimization/dog_tail.jpg)
 
 Tail call optimization (a.k.a. tail call elimination) is a technique used by language implementers to improve the recursive performance of your programs. It is a clever little trick that eliminates the memory overhead of recursion. In this post, we'll talk about how recursion is implemented under the hood, what tail recursion is and how it provides a chance for some serious optimization.
 

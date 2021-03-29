@@ -776,6 +776,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
+    font-weight: bold;
 }
 
 .author-thumb {
@@ -788,6 +789,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .post-meta a {
     color: #9EABB3;
+    font-weight: bold;
     text-decoration: none;
 }
 

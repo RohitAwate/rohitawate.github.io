@@ -2,6 +2,7 @@
 layout: post
 title: How Everest orchestrates pseudo tab-switching
 summary: Deep dive into the ideas and implementation of a memory optimization technique used in Everest.
+cover: /images/posts/2018-09-19-everest-state-switching/header.png
 ---
 
 _**Note**: This article was originally published on [the DEV Community](https://dev.to/rohit/how-everest-orchestrates-pseudo-tab-switching-49gp)_.
