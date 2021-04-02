@@ -2,6 +2,7 @@
 layout: post
 title: My First Contribution to Firefox
 summary: An account of my first contribution to SpiderMonkey, Firefox's JavaScript engine.
+categories: Open-Source Mozilla Firefox JavaScript
 cover: /images/posts/2019-11-06-firefox-contribution/header.png
 ---
 

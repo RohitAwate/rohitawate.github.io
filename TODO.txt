@@ -1,0 +1,29 @@
+- Update
+    - Footer tagline sequence should match landing page tagline.
+    - All posts
+        - Use h2 for in-post headings
+        - Tags vs categories
+    - About page
+        - NEW HEADER IMAGE
+        - update content: pass out, Northeastern, RC
+        - shorten content: too long, keep it super brief
+    - Portfolio
+        - Make it fit within design
+        - Else go for completely custom layout
+        - add recent projects
+            - copper
+            - genetic algorithm
+    - Contact form
+        - custom layout
+        - new formspree link
+    - Everest article: rename to "Reactive State Management in Everest"
+- Images
+    - either converge into assets or continue in images
+    - OPTIMIZE!
+- Fonts
+    - Optimize the sizes for Inter
+- google analytics
+- Don't use fixed size on footer avatar
+- Social sharing
+    - Get rid of Google Plus
+    - Align with the rest of the footer content
