@@ -6,7 +6,7 @@ portfolio: '/portfolio'
 hello: '/hello'
 ---
 
-<header class="main-header {% if page.cover %}"
+<header id="landing-cover" class="main-header {% if page.cover %}"
     style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
         {% if page.logo %}

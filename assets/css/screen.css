@@ -1462,6 +1462,9 @@ margin on the iframe, cause it breaks stuff. */
 
     .main-header {
         margin-bottom: 15px;
+    }
+
+    #landing-cover {
         height: 40%;
         background-position-x: -250px;
     }
