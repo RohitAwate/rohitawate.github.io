@@ -1069,6 +1069,10 @@ margin on the iframe, cause it breaks stuff. */
     min-height: 180px;
 }
 
+.post-head-peek.main-header {
+    height: 20%;
+}
+
 .no-cover.post-head.main-header {
     height: 85px;
     min-height: 0;
