@@ -55,25 +55,19 @@ post_class: post-template
         <footer class="post-footer">
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
-            <figure class="author-image">
-                <a class="img" href="{{ '/' | relative_url }}"
-                    style="background-image: url({{'/assets/images/profile.jpg' | relative_url}})">
-                    <span class="hidden">{{site.author}}'s Picture</span></a>
-            </figure>
-            <section class="author">
+            <img class="author-profile-img" 
+                src="/assets/images/profile.jpg" alt="Rohit's Profile Picture">
+            <section class="author-details">
                 <!-- Author Name -->
-                <h4> {{ site.author }} </h4>
+                <h4> {{ site.name }} </h4>
                 <!-- Author Bio -->
                 <p>
                     I write about computer science, technology, films, television and business
                 </p>
             </section>
             {% endif %}
-
-            <!-- Share links section -->
-            {% include share.html %}
-
         </footer>
+        {% include share.html %}
 
     </article>
 

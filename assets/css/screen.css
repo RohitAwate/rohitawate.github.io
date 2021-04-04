@@ -910,10 +910,10 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The author credit area after the post */
 .post-footer {
-    position: relative;
-    margin: 6rem 0 0 0;
-    padding: 6rem 0 0 0;
     border-top: #EBF2F6 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .post-footer h4 {
@@ -964,22 +964,24 @@ margin on the iframe, cause it breaks stuff. */
    Doing it like this means it's easier for the author bio
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
-.post-footer .share {
-    position: absolute;
-    top: 6rem;
-    right: 0;
-    width: 140px;
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
 }
 
-.post-footer .share a {
+.share a {
     font-size: 1.8rem;
     display: inline-block;
-    margin: 1rem 1.6rem 1.6rem 0;
-    color: #BBC7CC;
+    margin-left: 1rem;
+    color: #aaa;
     text-decoration: none;
 }
 
-.post-footer .share a:hover {
+.share a:hover {
     color: #50585D;
 }
 
@@ -1120,23 +1122,11 @@ margin on the iframe, cause it breaks stuff. */
     box-shadow: #FFF 0 0 0 5px;
 }
 
-.author-image {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    margin-left: -40px;
-    width: 200px;
-    height: 200px;
+.author-profile-img {
+    max-width: 20rem;
+    max-height: 20rem;
     border-radius: 100%;
-    overflow: hidden;
-    padding: 6px;
-    background: #fff;
-    z-index: 2;
-    box-shadow: #E7EEF2 0 0 0 1px;
+    padding: 20px;
 }
 
 .author-image .img {

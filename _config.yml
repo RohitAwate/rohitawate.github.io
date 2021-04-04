@@ -9,9 +9,9 @@ highlighter: rouge
 
 logo: false
 paginate: 15
-google_analytics: ""
 plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url: "/"
+domain_name: awate.in
 author: "Rohit"
