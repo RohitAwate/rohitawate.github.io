@@ -212,7 +212,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 2.5em;
     letter-spacing: -1px;
 }
 
@@ -1473,6 +1473,7 @@ margin on the iframe, cause it breaks stuff. */
     .main-header {
         margin-bottom: 15px;
         height: 40%;
+        background-position-x: -250px;
     }
 
     .no-cover.main-header {

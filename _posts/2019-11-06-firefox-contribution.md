@@ -3,7 +3,7 @@ layout: post
 title: My First Contribution to Firefox
 summary: An account of my first contribution to SpiderMonkey, Firefox's JavaScript engine.
 categories: Open-Source Mozilla Firefox JavaScript
-cover: /images/posts/2019-11-06-firefox-contribution/header.png
+cover: /images/posts/2019-11-06-firefox-contribution/header.jpg
 ---
 
 Since the past couple of years, I've open-sourced [most of my projects](https://github.com/RohitAwate) and also contributed to a few small ones. However, I've always wanted to contribute to a large, popular open-source project. I finally got around to doing that last month: I submitted a patch to Mozilla Firefox's JavaScript engine, SpiderMonkey, which was accepted on November 2.

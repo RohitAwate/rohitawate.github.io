@@ -22,7 +22,7 @@
     - OPTIMIZE!
 - Fonts
     - Optimize the sizes for Inter
-- google analytics
+- (done) privacy friendly analytics
 - Don't use fixed size on footer avatar
 - Social sharing
     - Get rid of Google Plus

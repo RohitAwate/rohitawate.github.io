@@ -1,6 +1,6 @@
 ---
 layout: default
-cover: '/images/retrievers.jpg'
+cover: '/images/retrievers-optimized.jpg'
 about: '/about'
 portfolio: '/portfolio'
 hello: '/hello'
@@ -20,11 +20,10 @@ hello: '/hello'
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }} {% endif %}
-                <br>
-                {% if page.about %} <a style="color:white; margin-right: 10px" href='{{page.about | relative_url}}'> About </a> {% endif %}
-                {% if page.portfolio %} <a style="color:white; margin-right: 10px" href='{{page.portfolio | relative_url}}'> Portfolio </a> {% endif %}
-                {% if page.hello %} <a style="color:white" href='{{page.hello | relative_url}}'> Say Hello! </a> {% endif %}
             </h2>
+            {% if page.about %} <a style="color:white; margin-right: 10px" href='{{page.about | relative_url}}'>About</a> {% endif %}
+            {% if page.portfolio %} <a style="color:white; margin-right: 10px" href='{{page.portfolio | relative_url}}'>Portfolio</a> {% endif %}
+            {% if page.hello %} <a style="color:white" href='{{page.hello | relative_url}}'>Say Hello!</a> {% endif %}
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
