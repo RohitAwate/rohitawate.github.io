@@ -1785,6 +1785,47 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 
+/*
+Say Hello Form!
+*/
+
+.hello-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hello-form > * {
+    margin: 10px;
+}
+
+.hello-form > input[type=text],
+.hello-form > textarea {
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+
+.hello-form > input[type=text]:focus,
+.hello-form > textarea:focus {
+    border-color: black;
+}
+
+.hello-form > #send-button {
+    width: 10em;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    min-height: 2em;
+}
+
+
+.hello-form > #send-button:hover {
+    background-color: darkslateblue;
+}
+
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.

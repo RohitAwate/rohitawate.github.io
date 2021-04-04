@@ -15,7 +15,7 @@
             - genetic algorithm
     - Contact form
         - custom layout
-        - new formspree link
+        - footer push down
     - Everest article: rename to "Reactive State Management in Everest"
 - Images
     - either converge into assets or continue in images

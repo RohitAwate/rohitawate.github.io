@@ -3,7 +3,7 @@ layout: default
 cover: '/images/retrievers.jpg'
 about: '/about'
 portfolio: '/portfolio'
-contact: '/contact'
+hello: '/hello'
 ---
 
 <header class="main-header {% if page.cover %}"
@@ -23,7 +23,7 @@ contact: '/contact'
                 <br>
                 {% if page.about %} <a style="color:white; margin-right: 10px" href='{{page.about | relative_url}}'> About </a> {% endif %}
                 {% if page.portfolio %} <a style="color:white; margin-right: 10px" href='{{page.portfolio | relative_url}}'> Portfolio </a> {% endif %}
-                {% if page.contact %} <a style="color:white" href='{{page.contact | relative_url}}'> Say Hello! </a> {% endif %}
+                {% if page.hello %} <a style="color:white" href='{{page.hello | relative_url}}'> Say Hello! </a> {% endif %}
             </h2>
         </div>
     </div>

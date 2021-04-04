@@ -1,0 +1,37 @@
+---
+layout: page
+title: Say Hello
+permalink: /hello
+tags: contact
+---
+
+<form
+	action="https://getform.io/f/f4b579f9-c248-4cff-beb9-1985a57660c4"
+	method="POST"
+	class="hello-form"
+>
+	<label>
+		Name
+	</label>
+  <input type="text" name="name" placeholder="Your name" required />
+	<label>
+		Email Address
+	</label>
+  <input type="text" name="email" placeholder="Your email address" required />
+	<label>
+		Subject
+	</label>
+  <input type="text" name="subject" placeholder="Your email address" required />
+	<label>
+		Content
+	</label>
+  <textarea
+			type="text"
+			name="content"
+			rows="5"
+			placeholder="What would you like to say?"
+			required
+		></textarea>
+
+	<input type="submit" id="send-button" value="Send" />
+</form>
