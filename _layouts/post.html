@@ -52,6 +52,8 @@ post_class: post-template
         </section>
         {% endif %}
 
+        {% include share.html %}
+
         <footer class="post-footer">
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
@@ -67,7 +69,6 @@ post_class: post-template
             </section>
             {% endif %}
         </footer>
-        {% include share.html %}
 
     </article>
 
