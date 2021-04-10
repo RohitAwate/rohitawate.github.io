@@ -6,7 +6,7 @@ categories: Open-Source Mozilla Firefox JavaScript
 cover: /images/posts/2019-11-06-firefox-contribution/header.jpg
 ---
 
-Since the past couple of years, I've open-sourced [most of my projects](https://github.com/RohitAwate) and also contributed to a few small ones. However, I've always wanted to contribute to a large, popular open-source project. I finally got around to doing that last month: I submitted a patch to Mozilla Firefox's JavaScript engine, SpiderMonkey, which was accepted on November 2.
+Since the past couple of years, I've open-sourced [most of my projects](https://github.com/RohitAwate){:target="_blank"} and also contributed to a few small ones. However, I've always wanted to contribute to a large, popular open-source project. I finally got around to doing that last month: I submitted a patch to Mozilla Firefox's JavaScript engine, SpiderMonkey, which was accepted on November 2.
 
 I use Firefox every day. I appreciate and believe in the values and principles of privacy and an open Internet that Mozilla holds. Also, I have the highest amount of respect for people that volunteer in such projects. Thus, it felt great to contribute back!
 
@@ -15,9 +15,9 @@ This post serves two purposes:
 - to serve as a guide for someone making their first contribution to Mozilla since they have a pretty involved process and I don't want you to repeat the same mistakes as me!
 
 # Finding a Bug
-My patch fixes [this bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1589072), which I found via [Codetribute](https://codetribute.mozilla.org/). You can use the 'good first bug' filter to find beginner-friendly bugs. Codetribute only lists bugs; they actually reside on Mozilla's bug tracker, [BugZilla](https://bugzilla.mozilla.org/home). Once you find a bug that you find interesting, check if someone else is already working on it. If not, add a comment that you wish to work on it.
+My patch fixes [this bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1589072){:target="_blank"}, which I found via [Codetribute](https://codetribute.mozilla.org/){:target="_blank"}. You can use the 'good first bug' filter to find beginner-friendly bugs. Codetribute only lists bugs; they actually reside on Mozilla's bug tracker, [BugZilla](https://bugzilla.mozilla.org/home){:target="_blank"}. Once you find a bug that you find interesting, check if someone else is already working on it. If not, add a comment that you wish to work on it.
 
-You'll have to search for the instructions to get the source code, build the project, run tests and so on. For example, here's [SpiderMonkey's getting started guide](https://wiki.mozilla.org/JavaScript:New_to_SpiderMonkey). This will vary depending on which project/module of Firefox you're contributing to.
+You'll have to search for the instructions to get the source code, build the project, run tests and so on. For example, here's [SpiderMonkey's getting started guide](https://wiki.mozilla.org/JavaScript:New_to_SpiderMonkey){:target="_blank"}. This will vary depending on which project/module of Firefox you're contributing to.
 
 # The Bug I Fixed
 
@@ -32,7 +32,7 @@ let i = 1_000_000;
 ```
 _This feature is so new that Jekyll's Markdown parser, kramdown, is messing the syntax highlighting above!_
 
-The [ES6 specification](https://github.com/tc39/proposal-numeric-separator) only allows a single underscore as a numeric separator between two digits. Additionally, a numeric literal must not end with an underscore. Thus, the following lines of code are illegal:
+The [ES6 specification](https://github.com/tc39/proposal-numeric-separator){:target="_blank"} only allows a single underscore as a numeric separator between two digits. Additionally, a numeric literal must not end with an underscore. Thus, the following lines of code are illegal:
 
 ```javascript
 let i = 100__0;
@@ -52,9 +52,9 @@ These error messages are contextually aware and more in line with what the progr
 
 # Writing the Fix
 
-Thankfully, Mozilla's [Jason Orendorff](https://twitter.com/jorendorff/) had provided detailed instructions on the BugZilla thread regarding the fix. Hence, it was just a matter of a few lines of C++. It was really simple.
+Thankfully, Mozilla's [Jason Orendorff](https://twitter.com/jorendorff/){:target="_blank"} had provided detailed instructions on the BugZilla thread regarding the fix. Hence, it was just a matter of a few lines of C++. It was really simple.
 
-You can view the patch [here](https://hg.mozilla.org/mozilla-central/rev/08d0bf739bad).
+You can view the patch [here](https://hg.mozilla.org/mozilla-central/rev/08d0bf739bad){:target="_blank"}.
 
 If you have any doubts, just leave a comment on the BugZilla thread or reach out to the respective team on IRC. Mozilla's community is incredibly welcoming, helpful, smart and patient. Don't hesitate to ask questions. Communication is key. That's one of the most important things I learned in this process.
 
@@ -81,11 +81,11 @@ For the commit message, use the above format. That number is the ID of the bug a
 
 This is the tough part and where I messed up the most. Mozilla uses it's own infrastructure and thus it's not as easy as opening a Pull Request on GitHub.
 
-First, you need to submit your patch for review. Mozilla uses [Phabricator](https://phabricator.services.mozilla.com/) for this purpose. In order to submit your patch there, you need to use a command-line tool called `moz-phab`. Follow [this guide](https://moz-conduit.readthedocs.io/en/latest/phabricator-user.html#setting-up-mozphab) for setting up your Phabricator account and to install `moz-phab` locally.
+First, you need to submit your patch for review. Mozilla uses [Phabricator](https://phabricator.services.mozilla.com/){:target="_blank"} for this purpose. In order to submit your patch there, you need to use a command-line tool called `moz-phab`. Follow [this guide](https://moz-conduit.readthedocs.io/en/latest/phabricator-user.html#setting-up-mozphab){:target="_blank"} for setting up your Phabricator account and to install `moz-phab` locally.
 
 Next, open a terminal and `cd` into the Firefox repository. Here, you can simply run `moz-phab` and it will push your changes to Phabricator and create a revision. The link to it will appear in your terminal.
 
-For more information about using Phabricator, check out this [workflow walkthrough](https://moz-conduit.readthedocs.io/en/latest/walkthrough.html).
+For more information about using Phabricator, check out this [workflow walkthrough](https://moz-conduit.readthedocs.io/en/latest/walkthrough.html){:target="_blank"}.
 
 # Code Review
 
@@ -112,7 +112,7 @@ This tells `moz-phab` that this commit is a revision to your original patch. Con
 
 # Acceptance and Landing
 
-If the reviewer is satisfied with your changes, s/he will accept your patch. Next, you need to wait for someone to 'land' your patch. I'm not entirely sure but I think that means committing your patch to the [central repository](https://hg.mozilla.org/mozilla-central). One of Mozilla's sheriffs will do that for you since you most likely don't have commit rights if you're reading this post.
+If the reviewer is satisfied with your changes, s/he will accept your patch. Next, you need to wait for someone to 'land' your patch. I'm not entirely sure but I think that means committing your patch to the [central repository](https://hg.mozilla.org/mozilla-central){:target="_blank"}. One of Mozilla's sheriffs will do that for you since you most likely don't have commit rights if you're reading this post.
 
 Once that's done, well, congratulations! Not only did you work through your first patch and submit it, but you also got it accepted! You can check out your change live in the Firefox Nightly build.
 
@@ -126,4 +126,4 @@ We use open-source software every day, knowingly or not. If you have the time an
 
 That's it for today, see you in the next one!
 
-_PS: I would like to thank my friend, [Jaydeep Borkar](https://jaydeepborkar.github.io/), whose contribution to [spaCy](https://github.com/explosion/spaCy) inspired me to do this!_
+_PS: I would like to thank my friend, [Jaydeep Borkar](https://jaydeepborkar.github.io/){:target="_blank"}, whose contribution to [spaCy](https://github.com/explosion/spaCy){:target="_blank"} inspired me to do this!_
