@@ -968,9 +968,10 @@ margin on the iframe, cause it breaks stuff. */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     padding: 10px;
-    background-color: #282828;
+    background-image: linear-gradient(30deg, #66f179, teal);
+    box-shadow: 3px 3px 20px #aaa;
     border-radius: 10px;
     margin-bottom: 30px;
 }
@@ -983,6 +984,7 @@ margin on the iframe, cause it breaks stuff. */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .share a {
@@ -994,7 +996,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .share a:hover {
-    color: #0aa2e9;
+    color: black;
 }
 
 /* The subscribe icon on the footer */
