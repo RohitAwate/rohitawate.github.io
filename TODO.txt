@@ -14,8 +14,8 @@
             - copper
             - genetic algorithm
     - Contact form
-        - custom layout
-        - footer push down
+        - (done) custom layout
+        - (done) footer push down
     - Everest article: rename to "Reactive State Management in Everest"
 - Images
     - either converge into assets or continue in images
@@ -23,7 +23,7 @@
 - Fonts
     - Optimize the sizes for Inter
 - (done) privacy friendly analytics
-- Don't use fixed size on footer avatar
+- (done) Don't use fixed size on footer avatar
 - Social sharing
-    - Get rid of Google Plus
-    - Align with the rest of the footer content
+    - (done) Get rid of Google Plus
+    - (done) Align with the rest of the footer content

@@ -2,7 +2,7 @@
 layout: post
 title: 'Drawing Parallels: Microsoft & The DC Extended Universe'
 summary: Highlighting the similarities in the approaches taken by Microsoft and the DC Extended Universe in becoming relevant again.
-date: 2019-06-17 13:07:00 +530
+date: 2021-04-04 19:47:00 +530
 cover: /images/posts/2019-07-04-drawing-parallels-microsoft-dceu/header.jpg
 categories: Microsoft WB DC
 ---
