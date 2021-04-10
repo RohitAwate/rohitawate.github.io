@@ -289,7 +289,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: #EFEFEF 1px solid;
+    border-top: #ccc 1px solid;
     margin: 3.2em 0;
     padding: 0;
 }

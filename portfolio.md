@@ -1,10 +1,20 @@
 ---
 layout: page
 title: Portfolio
-permalink: /portfolio/
+permalink: /portfolio
 tags: portfolio projects education
 cover: ../assets/images/stars.jpg
 peek: true
+---
+
+---
+
+## CopperVM
+
+CopperVM is an experimental bytecode virtual machine for an opinionated subset of JavaScript, written in modern C++. It will feature a complete JavaScript runtime with an async task queue, event loop and async task thread pool.
+
+Initially, my goal was to just build a virtual machine. Halfway through the project though, the idea that this would be able to run just JavaScript started seeming really boring. So, I decided to design my own programming language and build a brand new virtual machine using what I learned from Copper. So, that's coming up soon!
+
 ---
 
 ## Everest
@@ -16,8 +26,8 @@ Everest allows you to compose and requests, stores your history, comes with supp
 ![everest](/images/portfolio/everest.png)
 
 **Articles, Reviews and Mentions**:
-- [Article about UI optimization](/2018/09/19/everest-state-switching)
-- [By Java's official Twitter handle](https://twitter.com/java/status/1070730841079336960)
+- [Article about state management](/2018/09/19/everest-state-switching)
+- [Tweet by Java's official Twitter handle](https://twitter.com/java/status/1070730841079336960)
 - [Review by Nordic APIs](https://nordicapis.com/review-of-everest-api-testing-tool/)
 - [Article by JAXenter](https://jaxenter.com/everest-rest-api-testing-client-javafx-152796.html)
 
