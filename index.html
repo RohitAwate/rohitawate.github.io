@@ -24,7 +24,7 @@ hello: '/hello'
             </h2>
             {% if page.about %} <a style="color:white; margin-right: 10px" href='{{page.about | relative_url}}'>About</a> {% endif %}
             {% if page.portfolio %} <a style="color:white; margin-right: 10px" href='{{page.portfolio | relative_url}}'>Portfolio</a> {% endif %}
-            {% if page.resume %} <a style="color:white; margin-right: 10px" href='{{page.resume | relative_url}}'>Resume</a> {% endif %}
+            {% if page.resume %} <a style="color:white; margin-right: 10px" target="_blank" href='{{page.resume | relative_url}}'>Resume</a> {% endif %}
             {% if page.hello %} <a style="color:white" href='{{page.hello | relative_url}}'>Say Hello!</a> {% endif %}
         </div>
     </div>

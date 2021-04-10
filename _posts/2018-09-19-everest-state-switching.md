@@ -5,7 +5,7 @@ summary: Deep dive into the ideas and implementation of a memory optimization te
 cover: /images/posts/2018-09-19-everest-state-switching/header.png
 ---
 
-_**Note**: This article was originally published on [the DEV Community](https://dev.to/rohit/how-everest-orchestrates-pseudo-tab-switching-49gp)_.
+_**Note**: This article was originally published on [the DEV Community](https://dev.to/rohit/how-everest-orchestrates-pseudo-tab-switching-49gp){:target="_blank"}_.
 
 Everest is a REST API testing client that I've been working on this year. It's written in JavaFX and aims to be a **lighter, open-source** alternative to Electron-based options like _Postman_. It occupied the **#2 spot on GitHub's Java Trending** for a week back in May this year when I released the first alpha. Today, I'll be talking about a memory optimization technique that I've implemented in the most recent alpha release.
 

@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 permalink: /portfolio
 tags: portfolio projects education
-cover: ../assets/images/stars.jpg
+cover: ../assets/images/peak_fog.jpg
 peek: true
 ---
 
@@ -13,7 +13,7 @@ peek: true
 
 CopperVM is an experimental bytecode virtual machine for an opinionated subset of JavaScript, written in modern C++. It will feature a complete JavaScript runtime with an async task queue, event loop and async task thread pool.
 
-Initially, my goal was to just build a virtual machine. Halfway through the project though, the idea that this would be able to run just JavaScript started seeming really boring. So, I decided to design my own programming language and build a brand new virtual machine using what I learned from Copper. So, that's coming up soon!
+Initially, my goal was to just build a virtual machine, and I didn't really care about designing a programming language. So I went with JavaScript. Halfway through the project however, the idea that this would be able to run just JavaScript started seeming really boring. So, I decided to design my own programming language and build a brand new virtual machine using what I learned from Copper. So, that's coming up soon! Think _statically-typed Python without the off-side rule running blazing fast_.
 
 ---
 
