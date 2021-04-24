@@ -969,7 +969,7 @@ margin on the iframe, cause it breaks stuff. */
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 10px;
+    padding: 20px;
     background-image: linear-gradient(30deg, #66f179, teal);
     box-shadow: 3px 3px 20px #aaa;
     border-radius: 10px;
@@ -984,7 +984,10 @@ margin on the iframe, cause it breaks stuff. */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+}
+
+.share > h3 {
+    margin-bottom: 0px;
 }
 
 .share a {
@@ -996,7 +999,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .share a:hover {
-    color: black;
+    color: greenyellow;
 }
 
 /* The subscribe icon on the footer */
