@@ -76,7 +76,7 @@ Whenever the recursive call is the last statement in a function, we call it tail
 }
 ```
 
-Since this example is plain silly, let's take a look at something serious: **Fibonacci numbers**. Here's a non tail-recursive variant:
+Since this example is plain silly, let's take a look at something more involved: **Fibonacci numbers**. Here's a non tail-recursive variant:
 
 ```c
 // Returns the nth Fibonacci number.
@@ -156,9 +156,7 @@ Now, I'm not going to pretend that I understand this completely, because I don't
 
 Let's take a look at our tail recursive Fibonacci function, `fib_tail`. Once the above recursive call is made, there's no need to keep the local data around. There's no computation following the statement and it's simply returning the value returned by the recursive call; we could do that straight from the recursive call.
 
-This presents an opportunity to simply replace the values of the local `n`, `a` and `b` variables with the ones used in the recursive call. Instead of a `call` instruction like before, the compiler can simply redirect the flow of execution to the first instruction in the function, effectively emulating a recursive call. But, without the overhead of one! Basically, the compiler goes:
-
-![gif](https://bit.ly/2XQZZob)
+This presents an opportunity to simply replace the values of the local `n`, `a` and `b` variables with the ones used in the recursive call. Instead of a `call` instruction like before, the compiler can simply redirect the flow of execution to the first instruction in the function, effectively emulating a recursive call. But, without the overhead of one!
 
 This is how the call stack would look like:
 
@@ -174,16 +172,16 @@ For our tail recursive call, I see the following snippets of assembly:
 
 ```c
 # fib_tail.c:11:    return fib(n - 1, b, a + b);
-    movl    %eax, %edx  # <retval>, b
+movl    %eax, %edx  # <retval>, b
 
 # fib_tail.c:11:    return fib(n - 1, b, a + b);
-    leal    (%rsi,%rdx), %eax   #, <retval>
+leal    (%rsi,%rdx), %eax   #, <retval>
 
 # fib_tail.c:11:    return fib(n - 1, b, a + b);
-    leal    (%rcx,%rdx), %esi   #, _5
+leal    (%rcx,%rdx), %esi   #, _5
 
 # fib_tail.c:11:    return fib(n - 1, b, a + b);
-    movl    %esi, %edx  # _5, b
+movl    %esi, %edx  # _5, b
 ```
 
 As I said, I don't really understand assembly, but we're just checking if we've eliminated the `call fib` recursive calls. I'm not really sure how GCC is redirecting the control flow. What matters, however, is that there are no `call fib` instructions in the code. That means there are no recursive calls. The tail call has been eliminated. Feel free to dive into the assembly and verify for yourself.
@@ -202,8 +200,6 @@ As I said, I don't really understand assembly, but we're just checking if we've 
 It appears that support for TCO is more of an ideological choice for language implementers, rather than a technical one. It does manipulate the stack in ways the programmer would not expect and hence makes debugging harder. Refer the documentation of the specific implementation of your favorite language to check if it supports tail call optimization.
 
 # Conclusion
-I hope you understood the idea and techniques behind TCO. I guess the takeaway here is to prefer iterative solutions over recursive ones _(that is almost always a good idea, performance-wise)_. If you absolutely need to use recursion, try to analyze how big your stack would grow with a non-tail call.
+The takeaway here is to prefer iterative solutions over recursive ones _(that is almost always a good idea, performance-wise)_. If you absolutely need to use recursion, try to analyze how big your stack would grow with a non-tail call.
 
 If both of these conditions don't work for you and your language implementation supports tail call optimization, go for it. Keep in mind that debugging will get harder so you might want to turn off TCO in development and only enable it for production builds which are thoroughly tested.
-
-That's it for today, see you in the next post!
