@@ -3,7 +3,7 @@ layout: page
 permalink: /about
 tags: about
 title: Hey, I am Rohit
-cover: /images/about_cover.jpeg
+cover: /assets/images/vermont.jpg
 ---
 
 I'm a Software Engineer Intern at [**RedCarpet**](https://www.redcarpetup.com/){:target="_blank"}. Soon, I will be joining **Northeastern University** for their Master of Science in Computer Science program. Previously, I studied Computer Engineering at the **University of Pune**.
