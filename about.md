@@ -2,11 +2,11 @@
 layout: page
 permalink: /about
 tags: about
-title: Hey, I am Rohit
+title: Hey, this is Rohit.
 cover: /assets/images/vermont.jpg
 ---
 
-I'm a Software Engineer Intern at [**RedCarpet**](https://www.redcarpetup.com/){:target="_blank"}. Soon, I will be joining **Northeastern University** for their Master of Science in Computer Science program. Previously, I studied Computer Engineering at the **University of Pune**.
+I am a graduate student at **Northeastern University** studying Computer Science. Previously, I worked as a Software Engineer Intern at [**RedCarpet**](https://www.redcarpetup.com/){:target="\_blank"}. I did my undergrad in Computer Engineering from the **University of Pune**, India.
 
 On this website, I write about computer science, technology, films, television and business.
 
@@ -19,18 +19,18 @@ This changed in 2015 when I installed Ubuntu 14.04 LTS on my decade-old PC with 
 Writing code has enabled to me do another thing I love: _building things!_ I've built loads of projects over the past three years and you can check out some of the noteworthy ones in my [portfolio](/portfolio). I typically work with Java, Go, Python, C++ and Node.js. My areas of interest are systems, compilers, data science and computer vision.
 
 ### Films and Television
+
 I am a harcore film nerd, or in more elegant language, a _cinephile_. In my opinion, cinema is the most powerful artistic medium. Sitting in a theater for a couple of hours, watching some beautiful imagery in tandem with Earth-shattering sound all in service of immersing you in a story? Just the thought of it puts a smile on my face.
 
 I am a devout fan of filmmaker Christopher Nolan. I also highly admire the works of Quentin Tarantino, David Fincher, Stanley Kubrick, Martin Scorsese and many more contemporary filmmakers.
 
 > Along with code, this is one topic that I can talk endlessly about!
 
-
 ### Business
+
 No, I don't have an MBA, but I am quite fascinated by the business side of technology. I love to watch how technology is affected by or itself affects acquisitions, rivalries, startups, investments, legal wars, IPOs and the like. I was a proud Windows Phone user and have seen how a phenomenal piece of technology loses in the real world, thanks to some poor business decisions.
 
 These days, I'm interested in the privacy debate and the brewing war between streaming services. It's going to be interesting to see their ramifications in the near future.
-
 
 ### .. aaaand I love dogs!
 
