@@ -4,19 +4,29 @@ title: 'Drawing Parallels: Microsoft & The DC Extended Universe'
 summary: Highlighting the similarities in the approaches taken by Microsoft and the DC Extended Universe in becoming relevant again.
 date: 2021-08-01 11:30:00 +530
 cover: /images/posts/2019-07-04-drawing-parallels-microsoft-dceu/header.jpg
-categories: Microsoft WB DC
+categories: Microsoft DC Business Philosophy
 ---
 
-The past decade has been an uphill battle for both Microsoft and the DC Extended Universe. The former was struggling to stay relevant in the mobile space dominated by Google's Android and Apple's iOS while its legacy Windows PC business was in a steady decline. The latter was _(and is still)_ trying to imitate the success of the Marvel Cinematic Universe by making films based on its rich portfolio of iconic characters.
+# Why do I care about this?
 
-I've been a DC fan for a long time, thanks to Christopher Nolan's _The Dark Knight Trilogy_ and was a proud Windows Phone user with my Nokia Lumia 630. Around 2014-2016, I have seen these two old giants fight against the new, disrputive forces around the same time. I have a soft spot for the underdog, and as Microsoft and DC were shoved into this role, I desperately wanted them to do well **because I believed they had something unique to offer. Also, monopolies suck.**
+The past decade has been an uphill battle for Microsoft and DC Comics. The former was struggling to stay relevant in the mobile space dominated by Google's Android and Apple's iOS while its legacy Windows PC business was in a steady decline. People even thought [Microsoft would be the new IBM](https://www.forbes.com/sites/toddhixon/2013/08/12/is-microsoft-the-next-ibm/?sh=75884b4dc76a)! The latter was _(and still is)_ trying to imitate the success of the Marvel Cinematic Universe by making films based on its rich portfolio of iconic characters. While this might seem like an odd choice of companies to compare, but there is an intriguing and surprising similarity in the timeline and nature of their struggle.
 
-As I witnessed these battles unfold, I couldn't help but notice a similarity. Both are huge, household names, having made a massive impact on society and culture. However, they were faced with their fate due to largely the same factors. Let's talk about them today.
+The reason I am writing about this topic is twofold. First, it is a fascinating lesson about competition, innovation and adapting to new times. [TODO: write more about what kind of lesson it is] Second, and more importantly, it is a deeply personal story for me because it completely changed the direction of my career and taught me several philosophical lessons about the world of business.
+
+Around 2014, I found myself in a rather interesting situation where I was closely following the developments from both companies. I was young and trying to find my voice. Everyone around me was buying the newly launched Moto G. I wanted to be a rebel and chose to buy a Nokia Lumia 630 in 2014 because Android was too mainstream. I read every bit of news about Windows Phone and Microsoft, in general. I even participated in related discourse on Windows Central (TODO: add link) (called Windows Phone Central back then) and Twitter. +I also happen to be a cinephile and a huge fan of filmmaker Christopher Nolan. Nolan's _The Dark Knight Trilogy_ was the point where I fell in love with films, in general. That's also where my misplaced and unnecessary loyalty for DC came from.
+
+Between 2014 and 2016, I witnessed these two old giants fight against the new, disruptive forces. I couldn't help but notice a similarity. Both were (and still are) huge, household names, having made a massive impact on society and culture. I still believe that both had something truly remarkable to offer, at least on paper. Windows Phone was way ahead of its time, unfortunately for its own good. The live tiles interface was perfect for phones with small touch screens. The UI was easy to navigate with just simple swipes, had large legible text. No hamburger buttons to hide menus. It was also a locked-down operating system just like iOS and thus was not prone to viruses and malware. It was so good, in fact, that today we see Apple and Google copy features that Windows Phone pioneered back in the day. Things like Live Photos, tiles come to mind.
+
+The DCEU had a similar [resume here]
+
+ The execution and timing  However, they were faced with their fate due to largely the same factors. Let's look at these fascinating factors:
 
 # Late to the Party
-Smartphones exploded in popularity in 2007 with the launch of the original iPhone. Android launched in 2008 with the HTC Dream. **Windows Phone launched in October 2010.**
+Smartphones exploded in popularity in 2007 with the launch of the original iPhone. Android launched in 2008 with the HTC Dream. **Windows Phone launched in October 2010.** It's a full 3 years late.
 
-Marvel's Cinematic Universe had its inception in 2008 with the Robert Downey Jr. starrer _Iron Man_. The audiences loved it with its quirky, quick-witted hero and the overall light-hearted tone. It followed with six more films, successfully introducing relatively unknown characters before DC's _Man of Steel_, flew into theatres **in 2013**.
+> TODO: Add pictures of these phones?
+
+Marvel's Cinematic Universe had its inception in 2008 with the Robert Downey Jr. starrer _Iron Man_. Audiences loved the quirky, quick-witted hero and the overall light-hearted tone. It followed with six more films, successfully introducing relatively unknown characters before DC's _Man of Steel_, flew into theatres **in 2013**.
 
 # Rocky Start
 Within the first couple of years since their inception, Android and iOS gained a significant headstart in the hot new smartphone market. Consumers and developers were attracted alike; the platforms and devices opened up a whole new world of possibilities.
@@ -56,4 +66,4 @@ Your brand may not necessarily be stale, but fatigue is real and consumers will 
 # Challenging the _status quo_
 In my opinion, the Metro interface [TODO: add link] from Windows Phone made perfect sense. The big, colorful tiles displayed all the latest updates from your apps. Actionable items such as search bars, menus, buttons were stationed at the bottom of the screen so you didn't have to stretch your finger to the top of the screen. Funnily enough, we now see elements from Windows Phone's design in modern iterations of iOS and Android. [TODO: add reference]
 
-# Corporate 
+# Corporate Meddling
