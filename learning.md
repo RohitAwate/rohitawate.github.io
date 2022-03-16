@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Learning
+cover: /assets/
 permalink: /learning/
 tags: learning, resources, courses, tutorials, certificates
 ---

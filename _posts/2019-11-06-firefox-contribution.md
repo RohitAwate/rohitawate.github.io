@@ -1,9 +1,9 @@
 ---
 layout: post
-title: My First Contribution to Firefox
+title: Contributing to Firefox's SpiderMonkey
 summary: An account of my first contribution to SpiderMonkey, Firefox's JavaScript engine.
 categories: Open-Source Mozilla Firefox JavaScript
-cover: /images/posts/2019-11-06-firefox-contribution/header.jpg
+cover: /assets/images/posts/2019-11-06-firefox-contribution/header.jpg
 ---
 
 Since the past couple of years, I've open-sourced [most of my projects](https://github.com/RohitAwate){:target="_blank"} and also contributed to a few small ones. However, I've always wanted to contribute to a large, popular open-source project. I finally got around to doing that last month: I submitted a patch to Mozilla Firefox's JavaScript engine, SpiderMonkey, which was accepted on November 2.
@@ -42,11 +42,11 @@ let j = 100_;
 
 If you run this code under Firefox 70, you'll see the same error in both cases:
 
-![ff70](/images/posts/2019-11-06-firefox-contribution/ff70.png)
+![ff70](/assets/images/posts/2019-11-06-firefox-contribution/ff70.png)
 
 Makes sense, right? However, the SpiderMonkey team wanted separate error messages for these cases. Following is a screenshot from Firefox Nightly, which includes my patch:
 
-![ff72](/images/posts/2019-11-06-firefox-contribution/ff72.png)
+![ff72](/assets/images/posts/2019-11-06-firefox-contribution/ff72.png)
 
 These error messages are contextually aware and more in line with what the programmer would expect.
 

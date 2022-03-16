@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 permalink: /portfolio
 tags: portfolio projects education
-cover: ../assets/images/peak_fog.jpg
+cover: /assets/images/covers/peak_fog.jpg
 peek: true
 ---
 
@@ -23,7 +23,7 @@ Initially, my goal was to just build a virtual machine, and I didn't really care
 A beautiful, cross-platform REST client written in JavaFX that aims to be a lighter alternative to the popular Electron-based alternatives.
 Everest allows you to compose and requests, stores your history, comes with support for Basic Auth, Digest Auth and OAuth 2.0 _(work in progress)_. It also comes with lightweight mock API servers.
 
-![everest](/images/portfolio/everest.png)
+![everest](/assets/images/portfolio/everest.png)
 
 **Articles, Reviews and Mentions**:
 - [Article about state management](/2018/09/19/everest-state-switching)
@@ -34,7 +34,7 @@ Everest allows you to compose and requests, stores your history, comes with supp
 Everest will come with a synchronization server, Summit, which will sync your projects, requests, history and mock servers across your devices.
 Summit will be written in Go.
 
-Everest made it to [#2 on GitHub Java Trending](/images/portfolio/everest_rank2.jpg) for a week, consequently pushing me to [#13](/images/portfolio/rohit_rank13.jpg) on the list of trending Java developers the same week. It is also being by the University of California at San Diego for an online course they offer as an example for learning how to navigate a codebase, find things, add new features, etc. Check out a video by the course instructor, June Clarke, [here](https://www.youtube.com/watch?v=3BzOA3sCD8Q).
+Everest made it to [#2 on GitHub Java Trending](/assets/images/portfolio/everest_rank2.jpg) for a week, consequently pushing me to [#13](/assets/images/portfolio/rohit_rank13.jpg) on the list of trending Java developers the same week. It is also being by the University of California at San Diego for an online course they offer as an example for learning how to navigate a codebase, find things, add new features, etc. Check out a video by the course instructor, June Clarke, [here](https://www.youtube.com/watch?v=3BzOA3sCD8Q).
 
 ---
 
@@ -42,7 +42,7 @@ Everest made it to [#2 on GitHub Java Trending](/images/portfolio/everest_rank2.
 
 AmbiQuick is an ambulance aggregation service, developed as a university project. It is written in the Python-based [Django](https://www.djangoproject.com/) web framework along with [Bootstrap](https://getbootstrap.com/) and [Socket.IO](https://socket.io/). Led a team of 4 to successfully develop this web application over a semester.
 
-![ambiquick](/images/portfolio/ambiquick.jpg)
+![ambiquick](/assets/images/portfolio/ambiquick.jpg)
 
 ---
 
@@ -51,7 +51,7 @@ AmbiQuick is an ambulance aggregation service, developed as a university project
 
 A test server for the OAuth 2.0 Authorization Framework. OA2B is an RFC 6749 compliant implementation. OA2B is written in Go and uses Redis for persistence. It is a work in progress and will be available on [oauth2bin.org](https://oauth2bin.org) free for use. It is open-source, MIT-licensed and also available as a Docker image.
 
-![oa2b](/images/portfolio/oa2b.png/)
+![oa2b](/assets/images/portfolio/oa2b.png/)
 
 ---
 
@@ -71,7 +71,7 @@ _Check out the engine in action on ASCII Cinema:_
 
 A simple, beautiful text editor written with JavaFX. Learn more on the [website](https://rohitawate.github.io/Ballad).
 
-![ballad](/images/portfolio/ballad.png)
+![ballad](/assets/images/portfolio/ballad.png)
 
 ---
 
@@ -81,7 +81,7 @@ A sophisticated library management system written with JavaFX. It comes with sep
 
 It is powered by a Java-based REST API running in the cloud on Heroku and uses MySQL for persistence.
 
-![bookworm](/images/portfolio/bookworm.png)
+![bookworm](/assets/images/portfolio/bookworm.png)
 
 ---
 
@@ -90,7 +90,7 @@ It is powered by a Java-based REST API running in the cloud on Heroku and uses M
 
 Designed a set of 10 vector icons inspired by those of Adobe products for popular, open-source creative applications such as GIMP, Inkscape, Blender, Krita, etc. Available on [GitHub](https://github.com/RohitAwate/AdobeIcons) _(recommended)_ and [DeviantArt](https://www.deviantart.com/rohitawate/art/The-Adobe-Icons-Project-600489814).
 
-![adobe-icons](/images/portfolio/adobe-icons.jpg)
+![adobe-icons](/assets/images/portfolio/adobe-icons.jpg)
 
 **Articles**:
 - [OMG! Ubuntu!](https://www.omgubuntu.co.uk/2016/07/adobe-style-icons-10-open-source-creative-apps)

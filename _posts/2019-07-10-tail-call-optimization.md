@@ -4,7 +4,7 @@ title: Demystifying Tail Call Optimization
 date: 2019-07-11 21:13:00 +530
 categories: Compilers Optimizations
 summary: Exploring what tail call optimization is, how it works and why you should use it.
-cover: /images/posts/2019-07-10-tail-call-optimization/dog_tail.jpg
+cover: /assets/images/posts/2019-07-10-tail-call-optimization/dog_tail.jpg
 ---
 
 Tail call optimization (a.k.a. tail call elimination) is a technique used by language implementers to improve the recursive performance of your programs. It is a clever little trick that eliminates the memory overhead of recursion. In this post, we'll talk about how recursion is implemented under the hood, what tail recursion is and how it provides a chance for some serious optimization.
@@ -25,11 +25,11 @@ int main()
 ```
 Every function call in your program gets its own frame pushed onto the stack. This frame contains the local data of that call. When you execute the above program, the `main` function would be the first frame on the stack, since that's where your program begins execution. The topmost frame in the stack is the one currently being executed. After it completes execution, it is popped from the stack and the bottom frame resumes execution.
 
-![main](/images/posts/2019-07-10-tail-call-optimization/main.png)
+![main](/assets/images/posts/2019-07-10-tail-call-optimization/main.png)
 
 In our example, `main` in turn calls `printf`, another function, thereby pushing a new frame onto the stack. This frame will contain `printf`'s local data. Once `printf` completes execution, its frame is popped and control returns to the `main` frame.
 
-![printf](/images/posts/2019-07-10-tail-call-optimization/printf.png)
+![printf](/assets/images/posts/2019-07-10-tail-call-optimization/printf.png)
 
 Recursive functions do the same. Every recursive call gets its own frame on the stack. Here's a _horrible example_ of a recursive function which prints "hello" `n` times:
 
@@ -58,7 +58,7 @@ hello
 
 The function call stack will be something like this:
 
-![hello](/images/posts/2019-07-10-tail-call-optimization/hello.png)
+![hello](/assets/images/posts/2019-07-10-tail-call-optimization/hello.png)
 
 The first two calls will print out "hello" and make recursive calls with `n - 1`. Once we hit the last call with `n = 0`, we begin unwinding the stack.
 
@@ -124,7 +124,7 @@ int third_fib = fib(3);
 
 Assuming right-to-left precedence (i.e. the direction in which an expression is evaluated), the call stack would look something like this:
 
-![fib](/images/posts/2019-07-10-tail-call-optimization/fib.png)
+![fib](/assets/images/posts/2019-07-10-tail-call-optimization/fib.png)
 
 Quite large, isn't it? Imagine the size of the stack for finding out a later Fibonacci number! The problem here is that all the stack frames need to be preserved. You may use one of the local variables in the addition and hence the compiler needs to keep the frames around. If you look at the assembled output of this program, you'll see a `call` instruction for the `fib` function.
 
@@ -160,7 +160,7 @@ This presents an opportunity to simply replace the values of the local `n`, `a` 
 
 This is how the call stack would look like:
 
-![fib_tail](/images/posts/2019-07-10-tail-call-optimization/fib_tail.png)
+![fib_tail](/assets/images/posts/2019-07-10-tail-call-optimization/fib_tail.png)
 
 You don't have to take my word for it, let's look at the assembler output for `fib_tail`. We compile the same way as before:
 

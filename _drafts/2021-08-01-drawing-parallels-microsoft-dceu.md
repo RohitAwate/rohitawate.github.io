@@ -1,13 +1,11 @@
 ---
 layout: post
-title: 'Drawing Parallels: Microsoft & The DC Extended Universe'
+title: 'Drawing Parallels: Microsoft & DC'
 summary: Highlighting the similarities in the approaches taken by Microsoft and the DC Extended Universe in becoming relevant again.
 date: 2021-08-01 11:30:00 +530
-cover: /images/posts/2019-07-04-drawing-parallels-microsoft-dceu/header.jpg
+cover: /assets/images/posts/2019-07-04-drawing-parallels-microsoft-dceu/header.jpg
 categories: Microsoft DC Business Philosophy
 ---
-
-# Why do I care about this?
 
 The past decade has been an uphill battle for Microsoft and DC Comics. The former was struggling to stay relevant in the mobile space dominated by Google's Android and Apple's iOS while its legacy Windows PC business was in a steady decline. People even thought [Microsoft would be the new IBM](https://www.forbes.com/sites/toddhixon/2013/08/12/is-microsoft-the-next-ibm/?sh=75884b4dc76a)! The latter was _(and still is)_ trying to imitate the success of the Marvel Cinematic Universe by making films based on its rich portfolio of iconic characters. While this might seem like an odd choice of companies to compare, but there is an intriguing and surprising similarity in the timeline and nature of their struggle.
 

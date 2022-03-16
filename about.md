@@ -3,7 +3,7 @@ layout: page
 permalink: /about
 tags: about
 title: Hey, this is Rohit.
-cover: /assets/images/vermont.jpg
+cover: /assets/images/covers/vermont.jpg
 ---
 
 I am a graduate student at **Northeastern University** studying Computer Science. Previously, I worked as a Software Engineer Intern at [**RedCarpet**](https://www.redcarpetup.com/){:target="\_blank"}. I did my undergrad in Computer Engineering from the **University of Pune**, India.

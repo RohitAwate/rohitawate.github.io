@@ -1,11 +1,9 @@
 ---
 layout: post
-title: How Everest orchestrates pseudo tab-switching
+title: State Orchestration in Everest
 summary: Deep dive into the ideas and implementation of a memory optimization technique used in Everest.
-cover: /images/posts/2018-09-19-everest-state-switching/header.png
+cover: /assets/images/posts/2018-09-19-everest-state-switching/header.png
 ---
-
-_**Note**: This article was originally published on [the DEV Community](https://dev.to/rohit/how-everest-orchestrates-pseudo-tab-switching-49gp){:target="_blank"}_.
 
 Everest is a REST API testing client that I've been working on this year. It's written in JavaFX and aims to be a **lighter, open-source** alternative to Electron-based options like _Postman_. It occupied the **#2 spot on GitHub's Java Trending** for a week back in May this year when I released the first alpha. Today, I'll be talking about a memory optimization technique that I've implemented in the most recent alpha release.
 
@@ -16,7 +14,7 @@ This article is quite technical and some stuff is done in a certain way because 
 A disclaimer before we begin: I'm a student. I'm still attending university and have no professional experience. I have literally conjured up these ideas out of thin air and implemented them because they sounded promising. If you are an experienced developer, you may find this rather simple and obvious. Nonetheless, this was easily the most complex thing I've implemented in Everest and I'm excited to share it with you. Any feedback is welcome!
 
 # The Problem
-![dashboard](/images/posts/2018-09-19-everest-state-switching/dashboard.jpg)
+![dashboard](/assets/images/posts/2018-09-19-everest-state-switching/dashboard.jpg)
 
 This is the Dashboard in Everest. You can compose and send requests and also view their responses within it. You can have multiple of them open in separate tabs.
 
@@ -72,14 +70,14 @@ Now comes the clever bit: DS decommissions the lambdas that modified the Dashboa
 
 For example, if `DashboardController`'s lambda for`setOnSucceeded()`displayed the status code of the response by modifying the text value of a Label onscreen, the corresponding one set by `DashboardState` would modify the `statusCode` attribute within itself.
 
-![PTS in action](/images/posts/2018-09-19-everest-state-switching/pts-in-action.gif)
+![PTS in action](/assets/images/posts/2018-09-19-everest-state-switching/pts-in-action.gif)
 
 Now, when the user switches back to tab A, A's state will be applied to the Dashboard which in turn will have been updated by the lambdas set by DashboardState!
 
 TLDR? PTS allows you to switch between tabs even when you've got requests running in one or more of them.
 
 # The Gains 💪
-![comparison](/images/posts/2018-09-19-everest-state-switching/comparison.jpg)
+![comparison](/assets/images/posts/2018-09-19-everest-state-switching/comparison.jpg)
 
 This comparison was made between Alpha 1.2 _(without PTS)_ and the upcoming Alpha 1.4 _(with PTS)_ with 7 tabs in each instance. With more tabs, the difference can become even larger since v1.4 has to only create another instance of a `DashboardState` rather than a full Dashboard like v1.2 does.
 
