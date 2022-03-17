@@ -8,7 +8,7 @@ cover: /assets/images/covers/vermont.jpg
 
 I am a graduate student at **Northeastern University** studying Computer Science. Previously, I worked as a Software Engineer Intern at [**RedCarpet**](https://www.redcarpetup.com/){:target="\_blank"}. I did my undergrad in Computer Engineering from the **University of Pune**, India.
 
-On this website, I write about computer science, technology, films, television and business.
+On this website, I write about computer science, technology, films, television, and business.
 
 ### Computer Science & Technology
 

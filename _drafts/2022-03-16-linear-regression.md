@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Regression
+title: "Linear Regression: Intuition"
 date: 2022-03-16 17:45:00
 categories: Machine Learning, Data Science
 summary: About algo
@@ -8,53 +8,109 @@ cover: /assets/images/posts/2022-03-16-linear-regression/stock-cover.jpg
 katex: true
 ---
 
-In this post, we explore the intuition behind linear regression. While a relatively simple algorithm, we shall be learning a bunch of ideas and techniques that are used universal across machine learning.
+In this post, we explore the intuition behind linear regression. While a relatively simple algorithm, it employs a bunch of ideas and techniques that are universal across machine learning.
 
 Linear regression helps you find a pattern or trend in your data. It determines what attributes of your data influence the trend and by how much. Once we understand the trend of the data, we can make predictions based on it. Thus, we utilize historical data to make future predictions.
 
-Let's take the simplest and most popular example: predicting house prices. Your data is a bunch of pairs: the area of a house and its price. It tells you for what price a house of a certain area sold for. This is obviously naive and an oversimplification, since the price of a house is not just dependent on its area but also on other factors such as the locality of the house, the number of rooms, number of bathrooms, condition of the house, the year it was built and dozens more. These are what we call **features** in machine learning. Features influence the _trend_.
+Let's take a simple and very popular example: _predicting house prices_. Our dataset is a bunch of pairs: the area of a house and its price. It tells you the price a house of a certain area was sold for.
 
-For the sake of brevity, we are going to work with just one feature in this example i.e. the area in square feet. If we were to plot a graph with the area on the X-axis and the price on the Y-axis, we would see a graph that looked something like this.
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page1.png" style="width: 700px">
+</center>
 
-# TODO: Graph of data
+This is obviously naive and oversimplified, since the price of a house is not just dependent on its area but also on other factors such as its locality, the number of rooms, number of bathrooms, condition of the house, its age and dozens more. These are what we call **features** in machine learning. Features influence the _trend_.
 
-Just by eyeballing this, we can clearly see the trend here: _The price increases as the area does._ It's a linear relationship. But that's not why we call this linear regression, if you're curious. We'll worry about terminology later. The point I am trying to make here is that the trend of the data would be a line like this:
+For the sake of brevity, we are going to work with just one feature in this example i.e. the area in square feet. If we were to plot a graph with the area on the X-axis and the price on the Y-axis, we would see a graph that looked something like this:
 
-# TODO: Graph with trend line
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page2.png" style="width: 700px">
+</center>
 
-As humans, this comes quite intuitively to us. But why? Why do we think the trend of these data points is roughly along this line? One possible explanation would be that most of the points pass through the line, or are close to it. That makes a lot of sense: if the trend needs to be representative of the underlying data, then it needs to be as close as possible to it. If that's the case, the absolutely perfect fit for this data would be a monstrosity like this:
+Just by eyeballing this, we can clearly see the trend here: _The price increases as the area does._ It's a linear relationship. But that's not why we call this linear regression if you're curious. We'll worry about terminology later. The point I am trying to make here is that the trend of the data would be a line like this:
 
-# TODO: Graph passing through all points
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page3.png" style="width: 700px">
+</center>
 
-This curve passes through all the points. My intuition says that this is excessive. This curve is trying _too hard_ to please each and every point in the dataset and letting it influence it _a bit too much_. This phenomenon is what we call **overfitting**. This is the [yes-man](https://www.merriam-webster.com/dictionary/yes-man) of machine learning models. If that doesn't make any sense to you right now, don't fret, we'll get to it later.
+As humans, this comes quite intuitively to us. But why? Why do we think the trend of these data points is roughly along this line? Probably because most of the points pass through the trend line, or are close to it. That makes a lot of sense: if the trend needs to be representative of the underlying data, then it needs to be as close as possible to it. If that's the case, the absolutely perfect fit for this dataset would be a monstrosity like this:
 
-We certainly don't want that grotesque monstrosity and the kind we had before is the one we are looking for. But if you think about it, there could be many lines which roughly represent the trend.
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page4.png" style="width: 700px">
+</center>
 
-# TODO: All possible trend lines
+This curve passes through all the points. Your intuition probably says that this is excessive. This curve is trying _too hard_ and letting each and every point influence it _a bit too much_. This phenomenon is called **overfitting**. This is the [yes-man](https://www.merriam-webster.com/dictionary/yes-man){:target="\_blank"} of machine learning models. Or when you go around seeking career advice from a dozen different people and end up confused and overwhelmed because you don't know what you want in the first place. If those analogies don't make any sense to you right now, don't fret, we'll talk extensively about overfitting later.
 
-All of the above seem to follow the _trend_, more or less. There could also be so many more. How do we pick the best one? But before that, what does best even mean? Let's try to quantify that a bit. We previously said that the trend line needs to be as close as possible to all the data points. We could quantify this by calculating the distance from each point to the trend and adding up these distances. The trend line with the lowest sum of distances would be _the best_.
+We certainly don't want that grotesque monstrosity; the line we had previously seems like a good choice. It was not getting influenced too much by each point and just seemed more _balanced_.
 
-# TODO: One trend line and show distance of points from each point and sum them up
+Your next question would be, what do we do with this line? Well, we can make predictions! If we wish to determine the price of a new house, we can take its area, and make a projection on the trend line. From there, we make another projection onto the y-axis and voilá! Now you know the price of the house, predicted by our little machine learning model.
+
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Projection.png" style="width: 700px">
+</center>
+
+
+Now if you think about it, there could be many such lines that roughly represent the trend of the dataset. All of the below seem to follow the _trend_, more or less. There could also be so many more. How do we pick the best one?
+
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page5.png" style="width: 700px">
+</center>
+
+> But what does **best** even mean?
+
+Let's try to quantify that a bit. We previously said that the trend line needs to be as close as possible to all the data points. We could quantify this by calculating the distance from each point to the trend and adding up these distances. The trend line with the lowest sum of distances would be _the best_.
+
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page6.png" style="width: 700px">
+</center>
 
 So, the overall algorithm would be as follows:
+
 ```py
 for line in trend_lines:
     sum = 0
-    for point in data:
-        d = distance_between(point, line)
-        sum += d
+    for point in dataset:
+        sum += distance_between(point, line)
 
-best_line = line with minimum sum
+    if sum is least so far:
+        best_line = line
 ```
 
-Now onto a tiny but important detail. If we simply calculate the distance between the points and the line, it would be positive for a point above the line and negative for one below the line. We don't really care about the sign difference. We just need the magnitude of the distance. Your immediate response would be to take the absolute value of the distance, then. While that is valid, the most common technique is to rather **square** the distances. The reason why we do that is to simplify the math later on. 
+Now onto a tiny but important detail. If we simply calculate the distance between the points and the line, it would be positive for a point above the line and negative for one below the line. We don't really care about the sign difference. We just need the magnitude of the distance. Your immediate response would be to take the absolute value of the distance, then. While that is valid, the most common technique is to rather **square** the distances. There are a couple of reasons behind this choice but the most important one is that squares massively simplify the math later on.
 
-# TODO: Zoomed in, Line passing through middle, a point above and down
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page7.png" style="width: 700px">
+</center>
+
+Thus, our algorithm changes slightly to:
+
+```py
+    sum += distance_between(point, line) ^ 2
+```
 
 This means that the output of linear regression is but a humble **line**. More generally speaking, it is a **curve**. If you recall from middle school, a line has the following equation:
 
 $$y = mx + c$$
 
-Here, $m$ is the slope of the line, and $c$ is the y-intercept. $x$ and $y$ are variables. Thus, $m$ and $c$ characterize the line. When we say that we take the least sum of squared distances for a few trend lines, we are tweaking the $m$ and $c$ slightly and finding the one that fits best. Thus, my point here is that the final output of linear regression is going to be these coefficients of a line: $m$ and $c$.
+Here, $m$ is the slope of the line, and $c$ is the y-intercept aka the point on the y-axis where the line intersects. $x$ and $y$ are variables. Thus, $m$ and $c$ characterize the line. When we say that we take the least sum of squared distances for a few trend lines, we are tweaking $m$ and $c$ slightly and finding the one that fits best. The takeaway here is that the final output of linear regression is going to be coefficients of a line: $m$ and $c$.
 
-# TODO: y = m1x + c1 and so on upto n and then their corresponding costs and then pick min
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page8.png" style="width: 700px">
+</center>
+
+In our housing prices example, if the area of the house is zero, the price would obviously also be zero. Thus, our trend needs to pass through the origin. Thus, we don't need the $c$ term anymore and the equation simplifies to:
+
+$$ y = mx $$
+
+<!-- Maybe add trend line image here -->
+
+If $y$ is the price and $x$ is the area, then $m$ is the influence of the area on the price of the house. It is the _weight_ that we give to the area. If a house has an area of $x=1000$ sqft., and we weigh the area by $m = 100$, the price of the house would be $100K.
+
+If the line was **not** passing through the origin, however, we return to the original equation of the line i.e. $ y = mx + c$.
+
+<center>
+<img src="/assets/images/posts/2022-03-16-linear-regression/Page9.png" style="width: 700px">
+</center>
+
+$c$ is not a weight, since it does not influence any feature. Look at the equation, $c$ sits there by itself, not being multiplied by any variable. It simply moves the line towards the data, in this case above. In machine learning lingo, $c$ is the **bias** term.
+
+Thus, in the end, linear regression is just a process of determining the best **weights and biases**. Using these, we can then make predictions. We can also easily extend this idea to use multiple features, each of which gets its own weight; but that's for another time. In the next post, I formalize all the ideas in this post and derive the normal/closed-form equation to find the most optimal weights and biases.
