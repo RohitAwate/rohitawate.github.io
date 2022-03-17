@@ -1,6 +1,7 @@
 ---
 layout: post
 title: State Orchestration in Everest
+categories: ['Personal Projects']
 summary: Deep dive into the ideas and implementation of a memory optimization technique used in Everest.
 cover: /assets/images/posts/2018-09-19-everest-state-switching/header.png
 ---

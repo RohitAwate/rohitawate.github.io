@@ -2,7 +2,7 @@
 layout: post
 title: Demystifying Tail Call Optimization
 date: 2019-07-11 21:13:00 +530
-categories: Compilers Optimizations
+categories: Compilers
 summary: Exploring what tail call optimization is, how it works and why you should use it.
 cover: /assets/images/posts/2019-07-10-tail-call-optimization/dog_tail.jpg
 ---
