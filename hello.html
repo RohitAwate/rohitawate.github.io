@@ -7,7 +7,7 @@ cover: /assets/images/covers/stars.jpg
 peek: true
 ---
 
-<form class="hello-form" name="Hello Form" netlify>
+<form class="hello-form" name="Hello Form" data-netlify-recaptcha="true" netlify>
 	<label> Name </label>
 	<input type="text" name="name" placeholder="Your name" required />
 	<label> Email Address </label>
@@ -22,6 +22,6 @@ peek: true
 		placeholder="What would you like to say?"
 		required
 	></textarea>
-
+	<div data-netlify-recaptcha="true"></div>
 	<input type="submit" id="send-button" value="Send" />
 </form>
