@@ -2,7 +2,7 @@ name: Rohit Awate
 description: Computer science, cinema, technology and business.
 meta_description: "Rohit Awate: Computer science, cinema, technology and business."
 date: 2021
-permalink: /:year/:month/:day/:title
+permalink: /:title
 
 markdown: kramdown
 highlighter: rouge
