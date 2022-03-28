@@ -9,7 +9,7 @@ katex: true
 
 In this post, we explore the intuition behind linear regression. While a relatively simple algorithm, it employs a bunch of ideas and techniques that are universal across machine learning.
 
-> This post is part of my ongoing series, [The Intuition behind of Learning](/intuition-of-ml).
+> This post is part of my ongoing series, [The Intuition of Machine Learning](/intuition-of-ml).
 
 Linear regression helps you find a pattern or trend in your data. It determines what attributes of your data influence the trend and by how much. Once we understand the trend of the data, we can make predictions based on it. Thus, we utilize historical data to make future predictions.
 
