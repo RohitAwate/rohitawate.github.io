@@ -1,18 +1,19 @@
 ---
 layout: post
 title: "Linear Regression: Intuition"
-date: 2022-03-17 17:45:00
+date: 2022-03-17
 categories: [Machine Learning, Data Science]
-summary: About algo
 cover: /assets/images/posts/2022-03-17-linear-regression/stock-cover.jpg
 katex: true
 ---
 
 In this post, we explore the intuition behind linear regression. While a relatively simple algorithm, it employs a bunch of ideas and techniques that are universal across machine learning.
 
+> This post is part of my ongoing series, [The Intuition behind of Learning](/intuition-of-ml).
+
 Linear regression helps you find a pattern or trend in your data. It determines what attributes of your data influence the trend and by how much. Once we understand the trend of the data, we can make predictions based on it. Thus, we utilize historical data to make future predictions.
 
-Let's take a simple and very popular example: _predicting house prices_. Our dataset is a bunch of pairs: the area of a house and its price. It tells you the price a house of a certain area was sold for.
+Let's take a simple and very popular example: _pedicting house prices_. Our dataset is a bunch of pairs: the area of a house and its price. It tells us the price for which a house of a certain area was sold for.
 
 <center>
 <img src="/assets/images/posts/2022-03-17-linear-regression/Page1.png" style="  width: 700px">
@@ -20,13 +21,13 @@ Let's take a simple and very popular example: _predicting house prices_. Our dat
 
 This is obviously naive and oversimplified, since the price of a house is not just dependent on its area but also on other factors such as its locality, the number of rooms, number of bathrooms, condition of the house, its age and dozens more. These are what we call **features** in machine learning. Features influence the _trend_.
 
-For the sake of brevity, we are going to work with just one feature in this example i.e. the area in square feet. If we were to plot a graph with the area on the X-axis and the price on the Y-axis, we would see a graph that looked something like this:
+For the sake of brevity, we are going to work with just one feature in this example i.e. the area in square feet. If we were to plot a graph of price vs. area, it would look something like this:
 
 <center>
 <img src="/assets/images/posts/2022-03-17-linear-regression/Page2.png" style="width: 700px">
 </center>
 
-Just by eyeballing this, we can clearly see the trend here: _The price increases as the area does._ It's a linear relationship. But that's not why we call this linear regression if you're curious. We'll worry about terminology later. The point I am trying to make here is that the trend of the data would be a line like this:
+Just by eyeballing this, we can clearly see the trend here: _The price increases as the area does._ It's a linear relationship. But that's not why we call this linear regression if you're curious. We'll worry about terminology later. All we care about is that the trend of the data would be a line like this:
 
 <center>
 <img src="/assets/images/posts/2022-03-17-linear-regression/Page3.png" style="width: 700px">
@@ -55,7 +56,7 @@ Now if you think about it, there could be many such lines that roughly represent
 <img src="/assets/images/posts/2022-03-17-linear-regression/Page5.png" style="width: 700px">
 </center>
 
-> But what does **best** even mean?
+> But wait, what does **best** even mean?
 
 Let's try to quantify that a bit. We previously said that the trend line needs to be as close as possible to all the data points. We could quantify this by calculating the distance from each point to the line and adding up these distances. The line with the lowest sum of distances would be _the best_.
 
@@ -75,7 +76,7 @@ for line in trend_lines:
         best_line = line
 ```
 
-Now onto a tiny but important detail. If we simply calculate the distance between the points and the line, it would be positive for a point above the line and negative for one below the line. We don't really care about the sign difference. We just need the magnitude of the distance. Your immediate response would be to take the absolute value of the distance, then. While that is valid, the most common technique is to rather **square** the distances. There are a couple of reasons behind this choice but the most important one is that squares massively simplify the math later on.
+Now onto a tiny but important detail: If we simply calculate the distance between the points and the line, it could be positive or negative depending on whether it's above or below the line. We don't really care about the sign difference. We only care about how close the line is to the points i.e. we just need the magnitude of the distance. Your immediate response would be to then take the absolute value of the distance. While that is valid, the most common technique is to rather **square** the distances. There are a couple of reasons behind this choice but the most important one is that squares massively simplify the math later on.
 
 <center>
 <img src="/assets/images/posts/2022-03-17-linear-regression/Page7.png" style="width: 700px">
@@ -91,7 +92,7 @@ This means that the output of linear regression is but a humble **line**. More g
 
 $$y = mx + c$$
 
-Here, $m$ is the slope of the line, and $c$ is the y-intercept aka the point on the y-axis where the line intersects. $x$ and $y$ are variables. Thus, $m$ and $c$ characterize the line. When we say that we take the least sum of squared distances for a few trend lines, we are tweaking $m$ and $c$ slightly and finding the one that fits best. The takeaway here is that the final output of linear regression is going to be coefficients of a line: $m$ and $c$.
+Here, $m$ is the slope of the line, and $c$ is the y-intercept aka the point on the y-axis where the line intersects. $x$ and $y$ are variables. Thus, $m$ and $c$ characterize the line. When we say that we take the least sum of squared distances for a few trend lines, we are tweaking $m$ and $c$ slightly and finding the ones that offer the best fit. The takeaway here is that the final output of linear regression is going to be coefficients of a line: $m$ and $c$.
 
 <center>
 <img src="/assets/images/posts/2022-03-17-linear-regression/Page8.png" style="width: 700px">
@@ -111,8 +112,8 @@ If the line was **not** passing through the origin, however, we return to the or
 <img src="/assets/images/posts/2022-03-17-linear-regression/Page9.png" style="width: 700px">
 </center>
 
-$c$ is not a weight, since it does not influence any feature. Look at the equation, $c$ sits there by itself, not being multiplied by any variable. It simply moves the line towards the data, in this case above. In machine learning lingo, $c$ is the **bias** term.
+$c$ is not a weight, since it does not influence any feature. Look at the equation, $c$ sits there by itself, not being multiplied by any variable. It simply shifts the line towards the data, in this case above. In machine learning lingo, $c$ is the **bias** term.
 
-Thus, in the end, linear regression is just a process of determining the best **weights and biases**, as are many things in machine learning. Using these, we can then make predictions. We can also easily extend this idea to use multiple features, each of which gets its own weight; but that's for another time.
+Thus, in the end, linear regression is just a process of determining the best **weights and biases**, as are many things in machine learning. Using these, we can then make predictions. We can also easily extend this idea to use multiple features, each of which gets its own weight. That's called multi-variate linear regression, but that's for another time.
 
 In the next post, I formalize the ideas discussed in this post and derive the normal/closed-form equation to find the most optimal weights and biases.
