@@ -27,3 +27,4 @@
 - Social sharing
     - (done) Get rid of Google Plus
     - (done) Align with the rest of the footer content
+- change the url schema, get rid of dates
