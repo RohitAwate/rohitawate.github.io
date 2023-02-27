@@ -13,7 +13,7 @@ In this post, we explore the intuition behind linear regression. While a relativ
 
 Linear regression helps you find a pattern or trend in your data. It determines what attributes of your data influence the trend and by how much. Once we understand the trend of the data, we can make predictions based on it. Thus, we utilize historical data to make future predictions.
 
-Let's take a simple and very popular example: _pedicting house prices_. Our dataset is a bunch of pairs: the area of a house and its price. It tells us the price for which a house of a certain area was sold for.
+Let's take a simple and very popular example: _predicting house prices_. Our dataset is a bunch of pairs: the area of a house and its price. It tells us the price for which a house of a certain area was sold for.
 
 <center>
 <img src="/assets/images/posts/2022-03-17-linear-regression/Page1.png" style="  width: 700px">
